@@ -10,7 +10,8 @@ Install the package through [Composer](http://getcomposer.org/).
 
 ## CONFIGURATION
 
-1. Open config/app.php and add this line to your Service Providers Array.
+1. Open config/app.php and add this line to your Service Providers Array in laravel <= 10, in >= 11 add to bootstrap/providers.php.
+
 
 ```php
 LaravelCart\Cart\CartServiceProvider::class
