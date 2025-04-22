@@ -1,0 +1,39 @@
+{
+    "name": "medev/cart",
+    "description": "Laravel 12 Shopping cart",
+    "keywords": ["laravel", "shopping cart", "cart"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mehdi Ait Mouh",
+            "email": "mehdi.aitmouh.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "illuminate/validation": "^8.0|^9.0|^10.0|^11.0|^12.0",
+        "illuminate/translation": "^8.0|^9.0|^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.2",
+        "phpunit/phpunit": "^9.0",
+        "symfony/var-dumper": "5.1.5.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelCart\\": "src/LaravelCart"
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelCart\\Cart\\CartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "LaravelCart\\Cart\\Facades\\CartFacade"
+            }
+        }
+    }
+}
