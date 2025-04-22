@@ -6,7 +6,7 @@ A Shopping Cart Implementation for Laravel Framework
 
 Install the package through [Composer](http://getcomposer.org/).
 
-`composer require "laravelcart/cart"`
+`composer require "laravelshopping/cart"`
 
 ## CONFIGURATION
 
